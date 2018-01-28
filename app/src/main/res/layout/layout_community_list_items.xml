@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/college_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/college_logo"
+                android:layout_width="75dp"
+                android:layout_height="75dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/college_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/college_image"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/college_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Beloit College"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/college_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/college_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/num_members_combo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:text="2122"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_members"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_members"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:text="members"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/posts_combo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="25dp">
+
+                    <TextView
+                        android:id="@+id/tv_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:text="2122"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/text_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_points"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:text="points"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_trending"
+        android:layout_below="@id/relLayout1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:text="TRENDING POSTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_trending"
+        android:layout_marginBottom="5dp"
+        android:background="@color/light_grey"/>
+
+    <TextView
+        android:id="@+id/text_coming_soon"
+        android:layout_below="@id/cardView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Comming soon......"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/profile_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                app:layout_collapseMode="parallax">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relLayoutOne">
+
+                    <ImageView
+                        android:id="@+id/college_background_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax"
+                        />
+
+                    <TextView
+                        android:id="@+id/college_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="110dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:text="Beloit College"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ranking_image"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        app:civ_border_color="@color/light_grey"
+                        app:civ_border_width="1dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/handle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="130dp"
+                        android:text="handle.name"
+                        android:textColor="@color/dark_grey"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="160dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="25dp">
+
+                        <include layout="@layout/snippet_profile_detail" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <include layout="@layout/snippet_top_profilebar" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_grey_border_top_bottom"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:tabTextColor="@color/tab_text_color"
+            app:tabSelectedTextColor="@color/tab_selected_text_color"
+            app:tabIndicatorColor="@color/tab_selected_text_color"
+            app:tabIndicatorHeight="4dp"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

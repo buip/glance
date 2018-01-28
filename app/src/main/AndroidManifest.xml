@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prestonbui.glancesocial">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.WelcomeActivity" />
+        <activity android:name=".login.SignupActivity" />
+        <activity android:name=".profile.SignOutActivity"></activity>
+        <activity android:name=".login.ResetPasswordActivity"></activity>
+        <activity
+            android:name=".share.ShareActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".share.GalleryActivity" />
+        <activity
+            android:name=".view.ViewPostActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border_top"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/image_back_arrow"
+                    android:src="@mipmap/ic_back_arrow"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="New Post"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/button_new_post"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:background="@mipmap/ic_send_post"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="10dp"/>-->
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:id="@+id/button_new_post"
+                    android:layout_width="wrap_content"
+                    android:padding="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Post"
+                    app:bootstrapBrand="success"
+                    app:bootstrapSize="md"
+                    app:buttonMode="regular"
+                    app:showOutline="false"
+                    app:roundedCorners="true"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</RelativeLayout>

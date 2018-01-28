@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Glance</string>
+
+    <!--  Firebase Message -->
+
+    <string name="auth_failed">Failed to authenticate</string>
+    <string name="auth_success">Authentication Success</string>
+
+    <!-- Firebase database fields-->
+
+    <string name="dbname_users">users</string>
+	<string name="db_user">users</string>
+	<string name="dbname_posts">posts</string>
+	<string name="dbname_user_posts">user_posts</string>
+	<string name="field_user_id">user_id</string>
+	<string name="field_up_vote">up_votes</string>
+	<string name="field_down_vote">down_votes</string>
+
+	<string name="field_caption">caption</string>
+	<string name="field_date_created">date_created</string>
+	<string name="field_post_id">post_id</string>
+	<string name="field_tags">tags</string>
+	<string name="field_image_path">image_path</string>
+	<string name="field_comments">comments</string>
+
+	field_up_vote
+
+
+	<!--Irreleant-->
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--title and subtitle-->
+
+    <string name="handle_name_profile">handlename123</string>
+    <string name="college_name_profile">Beloit College</string>
+
+	<!--Intent Extras-->
+	<string name="selected_bitmap">selected_bitmap</string>
+
+	<!--Bundle args name-->
+	<string name="activity_number">activity_number</string>
+
+
+	<!--lorem-->
+    <string name="lorem">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
+		dictum vel egestas vel, porta sed ante.
+	</string>
+
+	<!-- Strings -->
+	<string name="post">POST</string>
+
+	<!--Login and register attached email string-->
+	<string name="beloit_email">\@beloit.edu</string>
+
+	<string name="selected_image">selected_image</string>
+
+
+</resources>

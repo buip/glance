@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/info_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ranking_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="8dp"
+                    android:src="@drawable/buccaneer"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="0.5dp"
+                    app:layout_scrollFlags="scroll" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/ranking_image">
+
+                    <TextView
+                        android:id="@+id/handle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="handle.name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/time_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/handle_name"
+                        android:layout_marginLeft="10dp"
+                        android:text="4h" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/post_option"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/ic_3_dot_horizontal"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/post_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_bar"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="4dp"
+                android:padding="8dp"
+                android:text="@string/lorem" />
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_caption"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <RelativeLayout
+                android:id="@+id/relLayoutTwo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/post_image"
+                android:background="@drawable/white_grey_border_top_bottom">
+
+                <RelativeLayout
+                    android:id="@+id/up_vote_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true">
+
+                    <com.like.LikeButton
+                        android:id="@+id/up_vote_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:anim_scale_factor="1"
+                        app:icon_size="45dp"
+                        app:icon_type="heart"
+                        app:like_drawable="@mipmap/ic_fire_on"
+                        app:unlike_drawable="@mipmap/ic_fire_off" />
+
+                    <TextView
+                        android:id="@+id/up_vote_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/up_vote_button"
+                        android:text="0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/comment_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/up_vote_group"
+                    android:layout_centerVertical="true">
+
+                    <ImageButton
+                        android:id="@+id/comment_button"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@mipmap/ic_speech_bubble"
+                        android:layout_marginRight="1dp"/>
+
+                    <TextView
+                        android:id="@+id/comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/comment_button"
+                        android:text="0" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

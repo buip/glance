@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "770311456581",
+    "firebase_url": "https://glance-88491.firebaseio.com",
+    "project_id": "glance-88491",
+    "storage_bucket": "glance-88491.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770311456581:android:64aa11a8b3febe0b",
+        "android_client_info": {
+          "package_name": "com.prestonbui.glancesocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770311456581-oo7mit9nem0divimm42g3d8490ip1ca1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prestonbui.glancesocial",
+            "certificate_hash": "3d47b9e5232991a12ae355d36b928a46f6599294"
+          }
+        },
+        {
+          "client_id": "770311456581-0n9aif0pvrua0lnd9tb6crfb9fms3gt5.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "770311456581-sivoqsrrju2u40u3ggkv3i52ceeh4097.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIDzfuu1JlBrArtjjnjN6dTASsqhUFBvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770311456581-0n9aif0pvrua0lnd9tb6crfb9fms3gt5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

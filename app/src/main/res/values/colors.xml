@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="loading_background_color">#424242</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="white_t75">#b4ffffff</color>
+
+    <color name="light_blue">#81d4fa</color>
+    <color name="light_purple">#ab47bc</color>
+    <color name="yellow">#ffee58</color>
+    <color name="red">#ff0000</color>
+    <color name="light_grey">#e0e0e0</color>
+    <color name="dark_grey">#616161</color>
+    <color name="card_background_color">@color/white</color>
+    <color name="link_blue">#3366BB</color>
+    <color name="accent_material_light_1">#ffcf40</color>
+
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#ffffff</color>
+
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+
+    <color name="button_grey">#6d6d6d</color>
+
+    <color name="tab_text_color">#939393</color>
+    <color name="tab_selected_text_color">#8e4600</color>
+
+    <color name="main_theme_orange">#d35400</color>
+    <color name="silver">#bdc3c7</color>
+    <color name="dark_blue">#2c3e50</color>
+
+
+
+</resources>

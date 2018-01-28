@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="glance_orange">
+
+        <item name="colorAccent">@color/main_theme_orange</item>
+    </style>
+
+
+    <style name="TextLabel" parent="glance_orange">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white_t75</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/primary</item>
+        <item name="colorControlNormal">@color/white_t75</item>
+        <item name="colorControlActivated">@color/white_t75</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="glance_orange" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+</resources>

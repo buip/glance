@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_gravity="bottom"
+    android:background="@drawable/white_grey_border_bottom">
+
+    <ImageView
+        android:id="@+id/bottom_profile_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_gravity="start|bottom"
+        android:src="@mipmap/ic_profile"/>
+
+    <ImageView
+        android:id="@+id/bottom_community_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="end|bottom"
+        android:src="@mipmap/ic_community"/>
+
+    <ImageView
+        android:id="@+id/bottom_feeds_buttom"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center|bottom"
+        android:src="@mipmap/ic_home"/>
+    
+    <View
+        android:id="@+id/bottom_indicator"
+        android:layout_width="48dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/indicator_background"/>
+
+
+</FrameLayout>
