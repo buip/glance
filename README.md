@@ -1,4 +1,4 @@
-# glance
+# Glance
 Glance is a social networking app that lets college students post their stories anonymously.
 
 Features:
